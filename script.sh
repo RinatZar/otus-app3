@@ -7,6 +7,7 @@ DIR2='/etc/nginx/sites-enabled/'
 
 #Ограничение потребления java
 echo -e "-Xms1g\n-Xmx1g"> /etc/elasticsearch/jvm.options.d/jvm.options
+echo "Java ограничен в потребление ресурсов, 1 gb"
 
 
 
