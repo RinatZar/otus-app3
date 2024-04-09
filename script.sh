@@ -7,7 +7,7 @@ DIR1='/home/otus-app3/elasticsearch.yml'
 
 #Ограничение потребления java
 echo -e "-Xms1g\n-Xmx1g"> /etc/elasticsearch/jvm.options.d/jvm.options
-echo "Java ограничен в потребление ресурсов, 1 gb"
+echo "Настроено ограничение для Java в потребление ресурсов, 1 gb"
 
 #Скопировать файл конфигурации 
 cp $DIR1 $DIR
