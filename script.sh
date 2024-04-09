@@ -22,7 +22,7 @@ fi
 # Настройка kibana
 if [ -f "/etc/kibana/kibana.yml" ]; then
   sed -i "s/^#server.port\s*:\s* 5601/server.port: 5601/" "/etc/kibana/kibana.yml"
-  sed -i "s/^#server.host\s*:\s* "0.0.0.0"/server.host: "0.0.0.0"/" "/etc/kibana/kibana.yml"
+  sed -i "s/^#server.host\s*:\s* "localhost"/server.host: "0.0.0.0"/" "/etc/kibana/kibana.yml"
 else
   echo "файл /etc/kibana/kibana.yml не найден"
 fi
