@@ -56,6 +56,14 @@ else
 fi
 
 # Настройка filebeat
+cp /home/otus-app3/filebeat.yml /etc/filebeat/
+systemctl daemon-reload
+systemctl restart filebeat
+if [ $? -eq 0 ]; then
+          echo "filebeat запущен, готов к работе"
+else
+          echo "Возникла ошибка, filebeat"
+fi
 
 
 
