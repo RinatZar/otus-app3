@@ -9,7 +9,7 @@ DIR1='/home/otus-app3/elasticsearch.yml'
 echo -e "-Xms1g\n-Xmx1g"> /etc/elasticsearch/jvm.options.d/jvm.options
 echo "Настроено ограничение для Java в потребление ресурсов, 1 gb"
 
-#Скопировать файл конфигурации 
+#Скопировать файл конфигурации elasticsearch
 cp $DIR1 $DIR
 systemctl daemon-reload
 systemctl restart elasticsearch
