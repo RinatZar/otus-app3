@@ -2,7 +2,7 @@
 
 # Установка elasticsearch, logstash, kibana
 sudo apt update
-dpkg -i *.deb -y
+dpkg -i *.deb
 
 
 
