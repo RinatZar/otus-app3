@@ -6,8 +6,8 @@ DIR1='/home/otus-app3/elasticsearch.yml'
 #DIR2='/etc/nginx/sites-enabled/'
 
 #Ограничение потребления java
-echo -e "-Xms1g\n-Xmx1g"> /etc/elasticsearch/jvm.options.d/jvm.options
-echo "Настроено ограничение для Java в потребление ресурсов, 1 gb"
+echo -e "-Xms3g\n-Xmx3g"> /etc/elasticsearch/jvm.options.d/jvm.options
+echo "Настроено ограничение для Java в потребление ресурсов, 3 gb"
 
 #Скопировать файл конфигурации elasticsearch
 cp $DIR1 $DIR
