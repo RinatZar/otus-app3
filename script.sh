@@ -1,4 +1,4 @@
-#!/bin/bash  elasticsearch.yml
+#!/bin/bash
 
 DIR='/etc/elasticsearch/'
 DIR1='/home/otus-app3/elasticsearch.yml'
