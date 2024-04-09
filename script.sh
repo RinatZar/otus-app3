@@ -6,9 +6,8 @@ DIR3='/home/otus-app1/status.conf'
 DIR2='/etc/nginx/sites-enabled/'
 
 #Ограничение потребления java
-cat > /etc/elasticsearch/jvm.options.d/jvm.options
--Xms1g
--Xmx1g
+echo -e "-Xms1g\n-Xmx1g"> /etc/elasticsearch/jvm.options.d/jvm.options
+
 
 
 
