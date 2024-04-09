@@ -46,7 +46,7 @@ if grep -q "$search_string" "$file"; then
 else
     echo "Строка '$search_string' не найдена в файле $file"
 fi
-
+cp /home/otus-app3/logstash-nginx-es.conf /etc/logstash/conf.d/
 systemctl daemon-reload
 systemctl restart logstash
 if [ $? -eq 0 ]; then
@@ -54,6 +54,9 @@ if [ $? -eq 0 ]; then
 else
           echo "Возникла ошибка, logstash"
 fi
+
+# Настройка filebeat
+
 
 
 
