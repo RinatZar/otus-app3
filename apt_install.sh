@@ -2,9 +2,9 @@
 
 # Установка elasticsearch, logstash, kibana
 sudo apt update
-dpkg -i elasticsearch-8.9.1-amd64.deb
-dpkg -i logstash-8.9.1-amd64.deb
-dpkg -i kibana-8.9.1-amd64.deb
+dpkg -i /home/otus/elasticsearch-8.9.1-amd64.deb
+dpkg -i /home/otus/logstash-8.9.1-amd64.deb
+dpkg -i /home/otus/kibana-8.9.1-amd64.deb
 systemctl daemon-reload
 systemctl restart elasticsearch
 if [ $? -eq 0 ]; then
